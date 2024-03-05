@@ -11,3 +11,22 @@ spring:
   data:
     rest:
       base-path: /api
+
+
+  banner:
+    location: banner
+
+
+logging:
+  level:
+    org:
+      springframework:
+        jdbc:
+          core: trace
+
+      hibernate:
+        SQL: trace
+
+        orm:
+          jdbc:
+            bind: trace
